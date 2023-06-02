@@ -1,0 +1,100 @@
+ 1009  for carpeta in "${destino[@]}"
+ 1010  do
+ 1011      cp "$archivo_origen" "$carpeta"
+ 1012  done
+ 1013  for carpeta in "${destino[@]}"
+ 1014  > do
+ 1015  >     cp "$origin" "$carpeta"
+ 1016  done
+ 1017  touch Readme.MD
+ 1018  archivo_origen="Readme.MD"
+ 1019  carpetas_destino=("Entrega1" "Entrega2" "Entrega3" "Entrega4" "Entrega5" "Git-Github")
+ 1020  for carpeta in "${carpetas_destino[@]}"; do     cp "$archivo_origen" "$carpeta"; done
+ 1021  git init
+ 1022  git status
+ 1023  git add .
+ 1024  git commit -m "first commit"
+ 1025  git remote add origin git@github.com:kaviur/Mochila_Urbano_Karen.git
+ 1026  git branch -M main
+ 1027  git push -u origin main
+ 1028  git branch trabajo_github
+ 1029  git checkout trabajo_github 
+ 1030  cd Git-Github/
+ 1031  touch cheatsheet.txt
+ 1032  nano cheatsheet.txt 
+ 1033  code .
+ 1034  git status
+ 1035  git add cheatsheet.txt 
+ 1036  git commit -m "resuelto cheatsheet"
+ 1037  git push origin trabajo_github
+ 1038  sudo shutdown -h +44
+ 1039  git add .
+ 1040  git commit -m "css"
+ 1041  git push
+ 1042  git status
+ 1043  git init
+ 1044  git add .
+ 1045  git commit -m "first commit"
+ 1046  git remote add origin git@github.com:kaviur/resume.git
+ 1047  git branch -M main
+ 1048  git push -u origin main
+ 1049  sudo shutdown -h +44
+ 1050  sudo shutdown -h +30
+ 1051  git status
+ 1052  git add .
+ 1053  git commit -m "header ok"
+ 1054  git push
+ 1055  git log
+ 1056  git branch
+ 1057  git pull
+ 1058  git push
+ 1059  git init
+ 1060  sudo shutdown -h +44
+ 1061  git status
+ 1062  git add .
+ 1063  git status
+ 1064  git commit -m "basic landing page ready"
+ 1065  git remote add origin git@github.com:kaviur/heroes.git
+ 1066  git branch -M main
+ 1067  git push -u origin main
+ 1068  sudo shutdown -h +30
+ 1069  mkdir Actividades/deportes de equipo
+ 1070  mkdir Actividades Actividades/deportes de equipo
+ 1071  mkdir Actividades Actividades/"deportes de equipo"
+ 1072  rm Actividades/
+ 1073  ls
+ 1074  cd DH
+ 1075  mkdir actividades actividades/"deportes de equipo" actividades/"deportes acuaticos" actividades/"deportes extremos" actividades/"deportes mentales"
+ 1076  ls
+ 1077  cd actividades/
+ 1078  ls
+ 1079  rm deportes extremos
+ 1080  rm "deportes extremos"
+ 1081  rm -r "deportes extremos"
+ 1082  ls
+ 1083  rm -r deportes mentales
+ 1084  ls
+ 1085  mkdir "deportes de mesa" 
+ 1086  cd "deportes de mesa"
+ 1087  touch Aljedrez.txt
+ 1088  ls
+ 1089  cd ..
+ 1090  cd "deportes de equipo"
+ 1091  touch basquet
+ 1092  cd ..
+ 1093  cd "deportes de mesa"
+ 1094  touch "ping pong"
+ 1095  ls
+ 1096  mv aljedrez.txt ../"deportes mentales"
+ 1097  mv Aljedrez.txt ../"deportes mentales"
+ 1098  cd ..
+ 1099  ls -R
+ 1100  git init
+ 1101  git add .
+ 1102  git commit -m "finished"
+ 1103  git remote add origin git@github.com:kaviur/pretestsIntroduccion.git
+ 1104  git branch -M main
+ 1105  git push -u origin main
+ 1106  history | tail -100
+ 1107  history | tail -50
+ 1108  history | tail -100 > comandos.txt
